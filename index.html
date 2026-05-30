@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed Ibrahim Ahmed — IT Professional & Web Developer</title>
+  <meta name="description"
+    content="Portfolio of Ahmed Ibrahim Ahmed — IT Support Specialist & Web Developer with expertise in troubleshooting, CMS management, and front-end development. Based in Egypt.">
+  <meta name="keywords" content="Ahmed Ibrahim, IT Support, Web Developer, Front End, React, WordPress, Portfolio">
+  <meta name="author" content="Ahmed Ibrahim Ahmed">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0a0f1e">
+  <link rel="canonical" href="https://ahmedhatab.github.io">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ahmed Ibrahim Ahmed — IT Professional & Web Developer">
+  <meta property="og:description"
+    content="IT Support Specialist & Web Developer delivering reliable tech solutions with modern web expertise.">
+  <meta property="og:url" content="https://ahmedhatab.github.io">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ahmed Ibrahim Ahmed — IT Professional & Web Developer">
+  <meta name="twitter:description"
+    content="IT Support Specialist & Web Developer delivering reliable tech solutions with modern web expertise.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%236366f1'/><stop offset='100%25' stop-color='%230ea5e9'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><text x='50' y='68' font-family='Arial' font-size='55' font-weight='bold' text-anchor='middle' fill='white'>A</text></svg>">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="#hero" class="nav-logo" aria-label="Ahmed Ibrahim Ahmed - Home">
+        <span class="logo-icon">A</span>
+        <span class="gradient-text" data-i18n="nav_name">Ahmed</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#experience" data-i18n="nav_experience">Experience</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#education" data-i18n="nav_education">Education</a>
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="nav-btn" id="langToggle" aria-label="Switch language" title="عربي / English">
+          <i class='bx bx-globe'></i>
+        </button>
+        <button class="nav-btn" id="themeToggle" aria-label="Toggle dark/light mode">
+          <i class='bx bx-moon' id="themeIcon"></i>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-controls="mobileNav"
+          aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+    <div class="mobile-nav-links">
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#skills" data-i18n="nav_skills">Skills</a>
+      <a href="#experience" data-i18n="nav_experience">Experience</a>
+      <a href="#projects" data-i18n="nav_projects">Projects</a>
+      <a href="#education" data-i18n="nav_education">Education</a>
+      <a href="#services" data-i18n="nav_services">Services</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </div>
+  </div>
+
+  <main id="main">
+  <!-- ═══ HERO SECTION ═══ -->
+  <section class="hero section" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="hero-grid-pattern"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span data-i18n="hero_badge">Available for Opportunities</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="line" data-i18n="hero_greeting">Hi, I'm</span>
+          <span class="line gradient-text" data-i18n="hero_name">Ahmed Ibrahim</span>
+          <span class="line" data-i18n="hero_role">IT & Web Professional</span>
+        </h1>
+
+        <p class="hero-description" data-i18n="hero_description">
+          IT Support Specialist & Web Developer with hands-on experience in troubleshooting, system administration, and
+          building modern web solutions. I combine technical infrastructure expertise with front-end development skills
+          to deliver reliable, effective IT solutions.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            <i class='bx bx-envelope'></i>
+            <span data-i18n="hero_cta_contact">Get in Touch</span>
+          </a>
+          <a href="#projects" class="btn btn-secondary">
+            <i class='bx bx-code-alt'></i>
+            <span data-i18n="hero_cta_projects">View Projects</span>
+          </a>
+          <a href="#" class="btn btn-ghost" id="downloadCvBtn">
+            <i class='bx bx-download'></i>
+            <span data-i18n="hero_cta_cv">Download CV</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="stat-number">3+</div>
+            <div class="stat-label" data-i18n="hero_stat_years">Years Experience</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-number">15+</div>
+            <div class="stat-label" data-i18n="hero_stat_projects">Projects Delivered</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-number">20+</div>
+            <div class="stat-label" data-i18n="hero_stat_skills">Technical Skills</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-avatar-wrapper">
+          <div class="hero-avatar-ring"></div>
+          <div class="hero-avatar">
+            <span class="avatar-initials">AI</span>
+          </div>
+          <div class="floating-icons">
+            <div class="floating-icon" title="React"><i class='bx bxl-react'></i></div>
+            <div class="floating-icon" title="WordPress"><i class='bx bxl-wordpress'></i></div>
+            <div class="floating-icon" title="JavaScript"><i class='bx bxl-javascript'></i></div>
+            <div class="floating-icon" title="Git"><i class='bx bxl-git'></i></div>
+            <div class="floating-icon" title="CSS3"><i class='bx bxl-css3'></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT SECTION ═══ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label"><i class='bx bx-user'></i> <span data-i18n="about_label">About Me</span></span>
+        <h2 class="section-title" data-i18n="about_title">Bridging IT Infrastructure & Web Development</h2>
+        <p class="section-subtitle" data-i18n="about_subtitle">Passionate about solving technical challenges and
+          building digital experiences that make a difference.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <div class="about-image-card">
+            <div class="about-photo">
+              <span class="photo-text">AIA</span>
+            </div>
+            <div class="about-info-cards">
+              <div class="about-info-card">
+                <div class="info-value">3+</div>
+                <div class="info-label" data-i18n="about_info_exp">Years Exp</div>
+              </div>
+              <div class="about-info-card">
+                <div class="info-value">15+</div>
+                <div class="info-label" data-i18n="about_info_projects">Projects</div>
+              </div>
+              <div class="about-info-card">
+                <div class="info-value" data-i18n="about_info_degree_value">B.Sc</div>
+                <div class="info-label" data-i18n="about_info_degree">CS Degree</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text reveal reveal-delay-1">
+          <h3 data-i18n="about_heading">Turning Complex Problems into Simple Solutions</h3>
+          <p data-i18n="about_p1">
+            I'm Ahmed Ibrahim Ahmed, an IT Support Specialist and Web Developer based in Egypt. With a Bachelor's degree
+            in Computer Science and Information Systems from October 6 University (Very Good grade), I bring a strong
+            technical foundation combined with real-world experience.
+          </p>
+          <p data-i18n="about_p2">
+            My journey spans from troubleshooting network infrastructure and managing CMS platforms to building
+            responsive web applications. At OMC, I enhanced platform functionality by 20%, trained 15+ staff members,
+            and reduced feature adoption time by 40%. I'm driven by the challenge of optimizing systems and creating
+            seamless digital experiences.
+          </p>
+
+          <div class="about-details">
+            <div class="about-detail">
+              <i class='bx bx-map'></i>
+              <div>
+                <div class="detail-label" data-i18n="about_location_label">Location</div>
+                <div class="detail-value" data-i18n="about_location_value">Egypt</div>
+              </div>
+            </div>
+            <div class="about-detail">
+              <i class='bx bx-envelope'></i>
+              <div>
+                <div class="detail-label" data-i18n="about_email_label">Email</div>
+                <div class="detail-value">ahmedehatab@gmail.com</div>
+              </div>
+            </div>
+            <div class="about-detail">
+              <i class='bx bx-phone'></i>
+              <div>
+                <div class="detail-label" data-i18n="about_phone_label">Phone</div>
+                <div class="detail-value" dir="ltr">+20 114 472 9110</div>
+              </div>
+            </div>
+            <div class="about-detail">
+              <i class='bx bx-world'></i>
+              <div>
+                <div class="detail-label" data-i18n="about_languages_label">Languages</div>
+                <div class="detail-value" data-i18n="about_languages_value">Arabic · English</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS SECTION ═══ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label"><i class='bx bx-code-block'></i> <span data-i18n="skills_label">Technical
+            Arsenal</span></span>
+        <h2 class="section-title" data-i18n="skills_title">Skills & Technologies</h2>
+        <p class="section-subtitle" data-i18n="skills_subtitle">A comprehensive toolkit built through education,
+          certifications, and hands-on project experience.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Web & Development -->
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <div class="skill-group-icon"><i class='bx bx-code-alt'></i></div>
+            <h3 class="skill-group-title" data-i18n="skill_web_title">Web & Development</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class='bx bxl-react'></i> React</span>
+            <span class="skill-tag"><i class='bx bx-code'></i> Next.js</span>
+            <span class="skill-tag"><i class='bx bxl-typescript'></i> TypeScript</span>
+            <span class="skill-tag"><i class='bx bxl-html5'></i> HTML5</span>
+            <span class="skill-tag"><i class='bx bxl-css3'></i> CSS3</span>
+            <span class="skill-tag"><i class='bx bxl-javascript'></i> JavaScript (ES6+)</span>
+            <span class="skill-tag"><i class='bx bxl-php'></i> PHP</span>
+            <span class="skill-tag"><i class='bx bx-data'></i> SQL / MySQL</span>
+          </div>
+        </div>
+
+        <!-- CMS & Hosting -->
+        <div class="skill-group reveal reveal-delay-1">
+          <div class="skill-group-header">
+            <div class="skill-group-icon"><i class='bx bxl-wordpress'></i></div>
+            <h3 class="skill-group-title" data-i18n="skill_cms_title">CMS & Hosting</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class='bx bxl-wordpress'></i> WordPress</span>
+            <span class="skill-tag"><i class='bx bx-server'></i> cPanel</span>
+            <span class="skill-tag"><i class='bx bx-customize'></i> CMS Management</span>
+            <span class="skill-tag"><i class='bx bx-edit'></i> Content Updates</span>
+            <span class="skill-tag"><i class='bx bx-bar-chart'></i> UX Testing</span>
+          </div>
+        </div>
+
+        <!-- Networking -->
+        <div class="skill-group reveal reveal-delay-2">
+          <div class="skill-group-header">
+            <div class="skill-group-icon"><i class='bx bx-network-chart'></i></div>
+            <h3 class="skill-group-title" data-i18n="skill_network_title">Networking</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class='bx bx-globe'></i> TCP/IP</span>
+            <span class="skill-tag"><i class='bx bx-transfer'></i> LAN/WAN</span>
+            <span class="skill-tag"><i class='bx bx-server'></i> DNS</span>
+            <span class="skill-tag"><i class='bx bx-wifi'></i> DHCP</span>
+            <span class="skill-tag"><i class='bx bx-wrench'></i> Network Config</span>
+            <span class="skill-tag"><i class='bx bx-bug'></i> Troubleshooting</span>
+          </div>
+        </div>
+
+        <!-- Hardware & Support -->
+        <div class="skill-group reveal reveal-delay-3">
+          <div class="skill-group-header">
+            <div class="skill-group-icon"><i class='bx bx-desktop'></i></div>
+            <h3 class="skill-group-title" data-i18n="skill_hardware_title">Hardware & Support</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class='bx bx-chip'></i> Hardware Installation</span>
+            <span class="skill-tag"><i class='bx bx-error'></i> SW Troubleshooting</span>
+            <span class="skill-tag"><i class='bx bx-cog'></i> System Maintenance</span>
+            <span class="skill-tag"><i class='bx bx-support'></i> End-User Support</span>
+          </div>
+        </div>
+
+        <!-- OS & Tools -->
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <div class="skill-group-icon"><i class='bx bx-terminal'></i></div>
+            <h3 class="skill-group-title" data-i18n="skill_os_title">OS & Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class='bx bxl-windows'></i> Windows</span>
+            <span class="skill-tag"><i class='bx bx-terminal'></i> Linux</span>
+            <span class="skill-tag"><i class='bx bxl-git'></i> Git</span>
+            <span class="skill-tag"><i class='bx bx-spreadsheet'></i> Microsoft Office</span>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-group reveal reveal-delay-1">
+          <div class="skill-group-header">
+            <div class="skill-group-icon"><i class='bx bx-brain'></i></div>
+            <h3 class="skill-group-title" data-i18n="skill_soft_title">Soft Skills</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class='bx bx-bulb'></i><span data-i18n="skill_problem">Problem
+                Solving</span></span>
+            <span class="skill-tag"><i class='bx bx-group'></i><span data-i18n="skill_team">Team
+                Collaboration</span></span>
+            <span class="skill-tag"><i class='bx bx-message-square-dots'></i><span
+                data-i18n="skill_comm">Communication</span></span>
+            <span class="skill-tag"><i class='bx bx-book-reader'></i><span data-i18n="skill_training">Training &
+                Mentoring</span></span>
+            <span class="skill-tag"><i class='bx bx-time-five'></i><span data-i18n="skill_time">Time
+                Management</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EXPERIENCE SECTION ═══ -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label"><i class='bx bx-briefcase'></i> <span data-i18n="exp_label">Career
+            Journey</span></span>
+        <h2 class="section-title" data-i18n="exp_title">Professional Experience</h2>
+        <p class="section-subtitle" data-i18n="exp_subtitle">A proven track record of delivering results across IT
+          support, web development, and CMS management.</p>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="timeline-line"></div>
+
+        <!-- Freelance -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date"><i class='bx bx-calendar'></i> <span data-i18n="exp1_date">October 2022 - Present</span></span>
+            <h3 class="timeline-role" data-i18n="exp1_role">Freelance Web Developer</h3>
+            <div class="timeline-company"><i class='bx bx-map-pin'></i> <span data-i18n="exp1_company">Self-Employed ·
+                Remote</span></div>
+            <ul class="timeline-achievements">
+              <li data-i18n="exp1_a1">Building responsive, modern websites for clients using React, HTML5, CSS3, and
+                JavaScript</li>
+              <li data-i18n="exp1_a2">Managing end-to-end web projects from concept to deployment with WordPress and
+                custom solutions</li>
+              <li data-i18n="exp1_a3">Delivering pixel-perfect, SEO-optimized websites with cross-browser compatibility
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- OMC -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date"><i class='bx bx-calendar'></i> <span data-i18n="exp2_date">Jul 2023 – Aug
+                2024</span></span>
+            <h3 class="timeline-role" data-i18n="exp2_role">Web Master & IT Support</h3>
+            <div class="timeline-company"><i class='bx bx-buildings'></i> OMC</div>
+            <ul class="timeline-achievements">
+              <li data-i18n="exp2_a1">Developed and launched 3+ product features, enhancing platform functionality and
+                boosting user engagement by 20%</li>
+              <li data-i18n="exp2_a2">Executed 12+ monthly WordPress CMS updates to maintain up-to-date content and
+                support user engagement</li>
+              <li data-i18n="exp2_a3">Trained 15+ staff members on CMS operations, reducing feature adoption time by 40%
+              </li>
+              <li data-i18n="exp2_a4">Assisted in identifying and fixing network issues, including connectivity and
+                configuration problems</li>
+              <li data-i18n="exp2_a5">Collaborated with marketing on 5+ conversion-focused UX tests</li>
+              <li data-i18n="exp2_a6">Provided hardware and software troubleshooting support for end-user devices</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Route Academy -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date"><i class='bx bx-calendar'></i> <span data-i18n="exp3_date">March 2022 - July 2022, Cairo, Egypt</span></span>
+            <h3 class="timeline-role" data-i18n="exp3_role">Front End Developer Intern</h3>
+            <div class="timeline-company"><i class='bx bx-buildings'></i> Route Academy</div>
+            <ul class="timeline-achievements">
+              <li data-i18n="exp3_a1">Built 3+ responsive sites using HTML5, CSS3, and ES6+, achieving a 100% mobile performance score and cross-browser consistency.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS SECTION ═══ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label"><i class='bx bx-folder-open'></i> <span data-i18n="proj_label">Featured
+            Work</span></span>
+        <h2 class="section-title" data-i18n="proj_title">Projects & Portfolio</h2>
+        <p class="section-subtitle" data-i18n="proj_subtitle">A selection of projects showcasing my development skills
+          and problem-solving approach.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Travel Agency Landing Page -->
+        <div class="project-card reveal">
+          <div class="project-card-image">
+            <i class='bx bx-world project-icon'></i>
+            <div class="project-card-overlay">
+              <a href="https://ahmedhatab.github.io/Travel-Agency-Landing-Page/" target="_blank" rel="noopener"
+                class="project-overlay-btn" title="Live Demo" aria-label="Open Travel Agency Landing Page live demo"><i class='bx bx-link-external'></i></a>
+              <a href="https://github.com/AhmedHatab/Travel-Agency-Landing-Page" target="_blank" rel="noopener"
+                class="project-overlay-btn" title="Source Code" aria-label="Open Travel Agency Landing Page source code"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title" data-i18n="proj1_title">Travel Agency Landing Page</h3>
+            <p class="project-card-desc" data-i18n="proj1_desc">A visually stunning landing page for a travel agency
+              featuring modern design, smooth animations, and fully responsive layout optimized for conversions.</p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Responsive</span>
+            </div>
+            <div class="project-card-footer">
+              <div class="project-links">
+                <a href="https://ahmedhatab.github.io/Travel-Agency-Landing-Page/" target="_blank" rel="noopener"
+                  class="project-link"><i class='bx bx-link-external'></i> <span data-i18n="proj_live">Live</span></a>
+                <a href="https://github.com/AhmedHatab/Travel-Agency-Landing-Page" target="_blank" rel="noopener"
+                  class="project-link"><i class='bx bxl-github'></i> <span data-i18n="proj_code">Code</span></a>
+              </div>
+              <div class="project-language">
+                <span class="lang-dot lang-html"></span> HTML
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Listing App -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-card-image">
+            <i class='bx bx-store project-icon'></i>
+            <div class="project-card-overlay">
+              <a href="https://ahmedhatab.github.io/product-listing-app/" target="_blank" rel="noopener"
+                class="project-overlay-btn" title="Live Demo" aria-label="Open Product Listing Application live demo"><i class='bx bx-link-external'></i></a>
+              <a href="https://github.com/AhmedHatab/product-listing-app" target="_blank" rel="noopener"
+                class="project-overlay-btn" title="Source Code" aria-label="Open Product Listing Application source code"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title" data-i18n="proj2_title">Product Listing Application</h3>
+            <p class="project-card-desc" data-i18n="proj2_desc">A dynamic product catalog application with filtering,
+              sorting, and responsive grid layout. Built with vanilla JavaScript demonstrating clean code architecture.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">API Integration</span>
+              <span class="tech-badge">Responsive</span>
+            </div>
+            <div class="project-card-footer">
+              <div class="project-links">
+                <a href="https://ahmedhatab.github.io/product-listing-app/" target="_blank" rel="noopener"
+                  class="project-link"><i class='bx bx-link-external'></i> <span data-i18n="proj_live">Live</span></a>
+                <a href="https://github.com/AhmedHatab/product-listing-app" target="_blank" rel="noopener"
+                  class="project-link"><i class='bx bxl-github'></i> <span data-i18n="proj_code">Code</span></a>
+              </div>
+              <div class="project-language">
+                <span class="lang-dot lang-javascript"></span> JavaScript
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Meal App -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-card-image">
+            <i class='bx bx-dish project-icon'></i>
+            <div class="project-card-overlay">
+              <a href="https://ahmedhatab.github.io/meal/" target="_blank" rel="noopener" class="project-overlay-btn"
+                title="Live Demo" aria-label="Open Meal Recipe Finder live demo"><i class='bx bx-link-external'></i></a>
+              <a href="https://github.com/AhmedHatab/meal" target="_blank" rel="noopener" class="project-overlay-btn"
+                title="Source Code" aria-label="Open Meal Recipe Finder source code"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title" data-i18n="proj3_title">Meal Recipe Finder</h3>
+            <p class="project-card-desc" data-i18n="proj3_desc">An interactive meal discovery application that fetches
+              recipes from an external API, featuring search functionality, category filtering, and detailed recipe
+              views.</p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">REST API</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">Async/Await</span>
+            </div>
+            <div class="project-card-footer">
+              <div class="project-links">
+                <a href="https://ahmedhatab.github.io/meal/" target="_blank" rel="noopener" class="project-link"><i
+                    class='bx bx-link-external'></i> <span data-i18n="proj_live">Live</span></a>
+                <a href="https://github.com/AhmedHatab/meal" target="_blank" rel="noopener" class="project-link"><i
+                    class='bx bxl-github'></i> <span data-i18n="proj_code">Code</span></a>
+              </div>
+              <div class="project-language">
+                <span class="lang-dot lang-javascript"></span> JavaScript
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CRUD Project -->
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-card-image">
+            <i class='bx bx-data project-icon'></i>
+            <div class="project-card-overlay">
+              <a href="https://github.com/AhmedHatab/crud-project" target="_blank" rel="noopener"
+                class="project-overlay-btn" title="Source Code" aria-label="Open CRUD Operations App source code"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title" data-i18n="proj4_title">CRUD Operations App</h3>
+            <p class="project-card-desc" data-i18n="proj4_desc">A full-featured data management application implementing
+              Create, Read, Update, and Delete operations with local storage persistence and form validation.</p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">LocalStorage</span>
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+            </div>
+            <div class="project-card-footer">
+              <div class="project-links">
+                <a href="https://github.com/AhmedHatab/crud-project" target="_blank" rel="noopener"
+                  class="project-link"><i class='bx bxl-github'></i> <span data-i18n="proj_code">Code</span></a>
+              </div>
+              <div class="project-language">
+                <span class="lang-dot lang-javascript"></span> JavaScript
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Website -->
+        <div class="project-card reveal">
+          <div class="project-card-image">
+            <i class='bx bx-user-circle project-icon'></i>
+            <div class="project-card-overlay">
+              <a href="https://ahmedhatab.github.io/portfolio-website/" target="_blank" rel="noopener"
+                class="project-overlay-btn" title="Live Demo" aria-label="Open Portfolio Website live demo"><i class='bx bx-link-external'></i></a>
+              <a href="https://github.com/AhmedHatab/portfolio-website" target="_blank" rel="noopener"
+                class="project-overlay-btn" title="Source Code" aria-label="Open Portfolio Website source code"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title" data-i18n="proj5_title">Portfolio Website</h3>
+            <p class="project-card-desc" data-i18n="proj5_desc">A professional personal portfolio website showcasing
+              skills, projects, and experience with modern design principles and smooth user experience.</p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+            <div class="project-card-footer">
+              <div class="project-links">
+                <a href="https://ahmedhatab.github.io/portfolio-website/" target="_blank" rel="noopener"
+                  class="project-link"><i class='bx bx-link-external'></i> <span data-i18n="proj_live">Live</span></a>
+                <a href="https://github.com/AhmedHatab/portfolio-website" target="_blank" rel="noopener"
+                  class="project-link"><i class='bx bxl-github'></i> <span data-i18n="proj_code">Code</span></a>
+              </div>
+              <div class="project-language">
+                <span class="lang-dot lang-html"></span> HTML
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customer Transactions -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-card-image">
+            <i class='bx bx-wallet project-icon'></i>
+            <div class="project-card-overlay">
+              <a href="https://github.com/AhmedHatab/customer-transactions" target="_blank" rel="noopener"
+                class="project-overlay-btn" title="Source Code" aria-label="Open Customer Transactions System source code"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title" data-i18n="proj6_title">Customer Transactions System</h3>
+            <p class="project-card-desc" data-i18n="proj6_desc">A customer transaction management system with data
+              visualization, filtering capabilities, and organized financial data display for business analytics.</p>
+            <div class="project-tech-stack">
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Data Viz</span>
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+            </div>
+            <div class="project-card-footer">
+              <div class="project-links">
+                <a href="https://github.com/AhmedHatab/customer-transactions" target="_blank" rel="noopener"
+                  class="project-link"><i class='bx bxl-github'></i> <span data-i18n="proj_code">Code</span></a>
+              </div>
+              <div class="project-language">
+                <span class="lang-dot lang-javascript"></span> JavaScript
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EDUCATION & CERTIFICATIONS ═══ -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label"><i class='bx bx-book-open'></i> <span data-i18n="edu_label">Education &
+            Certifications</span></span>
+        <h2 class="section-title" data-i18n="edu_title">Academic Background & Credentials</h2>
+        <p class="section-subtitle" data-i18n="edu_subtitle">A solid foundation in Computer Science complemented by
+          industry-recognized certifications.</p>
+      </div>
+
+      <div class="education-grid">
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class='bx bxs-graduation'></i></div>
+          <h3 class="edu-title" data-i18n="edu1_title">B.Sc. in Computer Science & Information Systems</h3>
+          <div class="edu-institution" data-i18n="edu1_inst">October 6 University</div>
+          <div class="edu-meta">
+            <i class='bx bx-star'></i> <span data-i18n="edu1_grade">Grade: Very Good</span>
+          </div>
+        </div>
+
+        <div class="edu-card reveal reveal-delay-1">
+          <div class="edu-icon"><i class='bx bx-book-reader'></i></div>
+          <h3 class="edu-title" data-i18n="edu2_title">Front End Development Program</h3>
+          <div class="edu-institution" data-i18n="edu2_inst">Route Academy · Cairo, Egypt</div>
+          <div class="edu-meta">
+            <i class='bx bx-calendar'></i> <span data-i18n="edu2_date">July 2022</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class='bx bxs-certification'></i></div>
+          <div>
+            <div class="cert-name" data-i18n="cert1_name">CompTIA A+</div>
+            <div class="cert-issuer" data-i18n="cert1_issuer">CompTIA · IT Fundamentals</div>
+          </div>
+        </div>
+        <div class="cert-card reveal reveal-delay-1">
+          <div class="cert-icon"><i class='bx bxs-certification'></i></div>
+          <div>
+            <div class="cert-name" data-i18n="cert2_name">Cisco CCNA</div>
+            <div class="cert-issuer" data-i18n="cert2_issuer">Cisco · Networking</div>
+          </div>
+        </div>
+        <div class="cert-card reveal reveal-delay-2">
+          <div class="cert-icon"><i class='bx bxl-react'></i></div>
+          <div>
+            <div class="cert-name" data-i18n="cert3_name">React Development</div>
+            <div class="cert-issuer" data-i18n="cert3_issuer">Route Academy · Front End</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICES / STRENGTHS ═══ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label"><i class='bx bx-rocket'></i> <span data-i18n="svc_label">What I Offer</span></span>
+        <h2 class="section-title" data-i18n="svc_title">Services & Strengths</h2>
+        <p class="section-subtitle" data-i18n="svc_subtitle">From IT infrastructure to web development — I deliver
+          end-to-end technology solutions.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><i class='bx bx-code-alt'></i></div>
+          <h3 class="service-title" data-i18n="svc1_title">Web Development</h3>
+          <p class="service-desc" data-i18n="svc1_desc">Building responsive, modern websites and web applications using
+            React, Next.js, and vanilla JavaScript with clean, maintainable code.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon"><i class='bx bx-support'></i></div>
+          <h3 class="service-title" data-i18n="svc2_title">IT Support & Troubleshooting</h3>
+          <p class="service-desc" data-i18n="svc2_desc">Diagnosing and resolving hardware, software, and network issues
+            efficiently. End-user support with a patient, solution-oriented approach.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon"><i class='bx bxl-wordpress'></i></div>
+          <h3 class="service-title" data-i18n="svc3_title">CMS & WordPress Management</h3>
+          <p class="service-desc" data-i18n="svc3_desc">Complete WordPress site management including content updates,
+            plugin management, performance optimization, and hosting via cPanel.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon"><i class='bx bx-network-chart'></i></div>
+          <h3 class="service-title" data-i18n="svc4_title">Network Configuration</h3>
+          <p class="service-desc" data-i18n="svc4_desc">Setting up and maintaining network infrastructure including
+            TCP/IP, DNS, DHCP, LAN/WAN with CompTIA A+ and CCNA knowledge.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i class='bx bx-palette'></i></div>
+          <h3 class="service-title" data-i18n="svc5_title">UI/UX Optimization</h3>
+          <p class="service-desc" data-i18n="svc5_desc">Improving user engagement through conversion-focused UX testing,
+            responsive design, and intuitive interface improvements.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon"><i class='bx bx-chalkboard'></i></div>
+          <h3 class="service-title" data-i18n="svc6_title">Training & Documentation</h3>
+          <p class="service-desc" data-i18n="svc6_desc">Creating training programs and documentation for teams. Proven
+            ability to train 15+ staff members with a 40% reduction in adoption time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT SECTION ═══ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label"><i class='bx bx-envelope'></i> <span data-i18n="contact_label">Get in
+            Touch</span></span>
+        <h2 class="section-title" data-i18n="contact_title">Let's Work Together</h2>
+        <p class="section-subtitle" data-i18n="contact_subtitle">Have a project in mind or need IT support? I'd love to
+          hear from you. Let's build something great.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card reveal">
+          <h3 class="contact-info-title" data-i18n="contact_info_title">Contact Information</h3>
+          <p class="contact-info-desc" data-i18n="contact_info_desc">Feel free to reach out through any of the channels
+            below. I typically respond within 24 hours.</p>
+
+          <div class="contact-methods">
+            <a href="mailto:ahmedehatab@gmail.com" class="contact-method">
+              <div class="contact-method-icon"><i class='bx bx-envelope'></i></div>
+              <div>
+                <div class="contact-method-label" data-i18n="contact_email_label">Email</div>
+                <div class="contact-method-value">ahmedehatab@gmail.com</div>
+              </div>
+            </a>
+            <a href="tel:+201144729110" class="contact-method">
+              <div class="contact-method-icon"><i class='bx bx-phone'></i></div>
+              <div>
+                <div class="contact-method-label" data-i18n="contact_phone_label">Phone</div>
+                <div class="contact-method-value" dir="ltr">+20 114 472 9110</div>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/ahmed-hatab" target="_blank" rel="noopener" class="contact-method">
+              <div class="contact-method-icon"><i class='bx bxl-linkedin'></i></div>
+              <div>
+                <div class="contact-method-label">LinkedIn</div>
+                <div class="contact-method-value">ahmed-hatab</div>
+              </div>
+            </a>
+            <a href="https://github.com/AhmedHatab" target="_blank" rel="noopener" class="contact-method">
+              <div class="contact-method-icon"><i class='bx bxl-github'></i></div>
+              <div>
+                <div class="contact-method-label">GitHub</div>
+                <div class="contact-method-value">AhmedHatab</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://linkedin.com/in/ahmed-hatab" target="_blank" rel="noopener" class="social-link"
+              aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/AhmedHatab" target="_blank" rel="noopener" class="social-link"
+              aria-label="GitHub"><i class='bx bxl-github'></i></a>
+            <a href="mailto:ahmedehatab@gmail.com" class="social-link" aria-label="Email"><i
+                class='bx bx-envelope'></i></a>
+            <a href="tel:+201144729110" class="social-link" aria-label="Phone"><i class='bx bx-phone'></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-card reveal reveal-delay-1">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name" data-i18n="form_name">Full Name</label>
+                <input class="form-input" type="text" id="name" name="name" required placeholder=""
+                  data-i18n-placeholder="form_name_ph">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email" data-i18n="form_email">Email Address</label>
+                <input class="form-input" type="email" id="email" name="email" required placeholder=""
+                  data-i18n-placeholder="form_email_ph">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject" data-i18n="form_subject">Subject</label>
+              <input class="form-input" type="text" id="subject" name="subject" required placeholder=""
+                data-i18n-placeholder="form_subject_ph">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message" data-i18n="form_message">Message</label>
+              <textarea class="form-textarea" id="message" name="message" required placeholder=""
+                data-i18n-placeholder="form_message_ph"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+              <i class='bx bx-send'></i>
+              <span data-i18n="form_submit">Send Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">
+          © 2024 <span data-i18n="footer_name">Ahmed Ibrahim Ahmed</span>. <span data-i18n="footer_rights">All rights
+            reserved.</span>
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/AhmedHatab" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/ahmed-hatab" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:ahmedehatab@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class='bx bx-chevron-up'></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>
